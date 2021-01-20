@@ -1,0 +1,362 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Comman */
+html {
+  scroll-behavior: smooth;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.cb {
+    clear: both;
+}
+.pull-right {
+  float: right !important;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-full {
+  width: 100%;
+}
+.col-half {
+  width: 50%;
+}
+.col-third {
+  width: 33.333%;
+}
+
+.btn {
+  color: #fff;
+  background-color: #000;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+}
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/*
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Từ tổng quan đến chi tiết
+ */
+
+/* 
+    1. Vị trí
+    2. Kích thước
+    3. Màu sắc
+    4. Kiểu chữ
+ */
+
+#main {
+}
+/* CSS HEADER  */
+#header {
+  height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* overflow: hidden; */
+}
+#nav {
+  display: inline-block;
+}
+#nav .subnav {
+  list-style-type: none;
+}
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+#nav .subnav li:hover,
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav li {
+  width: 100%;
+}
+
+#nav .subnav a {
+  color: #333;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .subnav {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .nav-arrow-down {
+  font-size: 12px;
+}
+
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover  {
+  color: #000;
+  background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon {
+  color: #000;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .menu-icon ,
+#header .search-icon {
+  color: #fff;
+  line-height: 46px;
+}
+
+/* CSS slider */
+#slider {
+    position: relative;
+    margin-top:46px;
+    /* padding-top: 50%; */
+    /* background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat; */
+}
+#slider .img {
+  width: 100%;
+  background: top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom:47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size:24px;
+    
+}
+#slider .text-description {
+    margin-top: 25px;
+    font-size:12px;
+    text-shadow: 0 0 1px #000;
+}
+/* Content */
+/* About Section */
+
+#content {
+    
+}
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#content .section-heading {
+    font-weight:500;
+    font-size:30px;
+    text-align: center;
+}
+#content .section-sub-heading {
+    text-align: center;
+    font-size:15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 25px;
+    margin-bottom:15px;
+}
+#content .about-text {
+    text-align: justify;
+    font-size:15px;
+    line-height: 1.4;
+    /* margin-bottom: 32px; */
+}
+#content .member-list {
+  margin-top: 32px;
+}
+
+#content .member-name {
+    font-size:15px;
+}
+#content .member-image {
+    margin-top:15px;
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+/* Tour Section */
+.tour-section {
+    background-color: #000;
+}
+.tickets-list {
+    background-color: #fff;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.tickets-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding:3px 4px;
+}
+.tickets-list .quantity {
+    float: right;
+    height: 24px;
+    width: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+/* Places section */
+.places-list {
+  padding-top: 16px;
+  background-color: #000;
+}
+
+.place-img {
+  width: 100%;
+  display:block;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-content {
+  padding: 16px;
+  background-color: #fff;
+  font-size: 15px;
+}
+.place-title {
+  /* margin: 15px 0; */
+  font-size: 15px;
+  font-weight: 600;
+}
+.place-time {
+  margin: 15px 0;
+  color: #757575;
+
+}
+.place-desc {
+  line-height: 1.4;
+  margin: 15px 0;
+
+}
+
+/* Contact */
+.contact-form .form-control {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.contact-content {
+  margin-top: 48px;
+  line-height: 1.5;
+}
+
+.contact-infor i[class*="ti-"]{
+  font-size: 18px;
+  margin-right: 14px;
+  font-weight: 900;
+}
+/* Map section */
+.map-section {
+  width: 100%;
+}
+
+/* footer */
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .socials-lits {
+  font-size: 24px;
+}
+#footer .socials-lits a {
+  text-decoration: none;
+  color: rgba(0 , 0, 0, 0.6);
+}
+#footer .copyright a:hover,
+#footer .socials-lits a:hover {
+  color: rgba(0 , 0, 0, 0.4);
+}
+
+#footer .copyright {
+  margin-top: 15px;
+  color: rgba(0 , 0, 0, 0.6);
+}
+
+#footer .copyright a {
+  color: rgba(0 , 0, 0, 0.6);
+  cursor: pointer;
+}
